@@ -1,0 +1,111 @@
+$blue-med: rgb(0, 42, 255)
+$blue-darck: rgb(16, 17, 22)
+$blue-light: rgb(0, 204, 255)
+
+body
+    background-color: lightgrey
+    margin: 0
+    font-family: Courier New, Courier, monospace
+
+main
+    max-width: 1200px
+    margin: 0 auto
+    display: grid
+    column-gap: 10px
+    row-gap: 10px
+    grid-template-columns: (4, 1fr)
+    grid-template-rows: auto
+    grid-template-areas: "abount abount abount abount" "quote quote quote quote" "joob__exp joob__exp joob__skills joob__skills" "eduacacao__escola eduacacao__escola educacao__outros educacao__outros"
+
+header
+    nav
+        background-color: $blue-med
+        display: flex
+        justify-content: space-evenly
+        padding: 20px
+        a
+            text-decoration: none
+            color: white
+    h1
+        text-align: center
+
+#abount
+    grid-area: abount
+    display: flex
+    #abount__photo
+        max-width: 450px
+        height: auto
+    #abount__cnt
+        background-color: white
+        padding: 50px
+        text-align: justify
+
+#quote
+    grid-area: quote
+    background-color: $blue-darck
+    text-align: center
+    color: white
+    padding: 20px 0
+    font-size: large
+
+#joob
+    background-color: white
+    h2
+        text-align: center
+
+    #joob__exp
+        grid-area: joob__exp
+        background-color: white
+        padding: 20px
+        .joob__exp__joobs
+            background-color: $blue-darck
+            color: white
+            border-radius: 10px
+            text-align: center
+            .joob__exp__joobs__logoTrabalhos
+                max-height: 150px
+                height: auto
+    #joob__skills
+        grid-area: joob__skills
+        background-color: white
+        padding: 20px
+        text-align: center
+
+
+#educacao
+    background-color: white
+    #eduacacao__escola
+        grid-area: educacao__escola
+        background-color: white
+        padding: 20px
+    #educacao__outros
+        grid-area: educacao__outros
+        background-color: $blue-light
+        padding: 20px
+
+
+#footer
+    background-color: $blue-darck
+    display: flex
+    flex-flow: row nowrap
+    color: white
+    justify-content: space-between
+    padding: 20px 80px
+    align-items: center
+    #footer__sMidia
+        .footer__sMidia__oficiais
+            max-width: 40px
+            height: auto
+    #footer__contatos
+        p
+            margin: 0
+    #footer__direitos
+        p
+            align-items: auto 
+
+
+
+
+
+
+

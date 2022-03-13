@@ -1,0 +1,117 @@
+body {
+  background-color: lightgrey;
+  margin: 0;
+  font-family: Courier New, Courier, monospace;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 4, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "abount abount abount abount" "quote quote quote quote" "joob__exp joob__exp joob__skills joob__skills" "eduacacao__escola eduacacao__escola educacao__outros educacao__outros";
+}
+
+header nav {
+  background-color: #002aff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  text-align: center;
+}
+
+#abount {
+  grid-area: abount;
+  display: flex;
+}
+#abount #abount__photo {
+  max-width: 450px;
+  height: auto;
+}
+#abount #abount__cnt {
+  background-color: white;
+  padding: 50px;
+  text-align: justify;
+}
+
+#quote {
+  grid-area: quote;
+  background-color: #101116;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  font-size: large;
+}
+
+#joob {
+  background-color: white;
+}
+#joob h2 {
+  text-align: center;
+}
+#joob #joob__exp {
+  grid-area: joob__exp;
+  background-color: white;
+  padding: 20px;
+}
+#joob #joob__exp .joob__exp__joobs {
+  background-color: #101116;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+#joob #joob__exp .joob__exp__joobs .joob__exp__joobs__logoTrabalhos {
+  max-height: 150px;
+  height: auto;
+}
+#joob #joob__skills {
+  grid-area: joob__skills;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#educacao {
+  background-color: white;
+}
+#educacao #eduacacao__escola {
+  grid-area: educacao__escola;
+  background-color: white;
+  padding: 20px;
+}
+#educacao #educacao__outros {
+  grid-area: educacao__outros;
+  background-color: #00ccff;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #101116;
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+  justify-content: space-between;
+  padding: 20px 80px;
+  align-items: center;
+}
+#footer #footer__sMidia .footer__sMidia__oficiais {
+  max-width: 40px;
+  height: auto;
+}
+#footer #footer__contatos p {
+  margin: 0;
+}
+#footer #footer__direitos p {
+  align-items: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
